@@ -1,0 +1,38 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+   int Maximum = 0;
+   int num;
+   cin >> num;
+
+while(num > 0)
+    {
+
+    if(num % 2 == 0)
+    {
+        if(num > Maximum)
+        {
+            Maximum = num;
+           
+        }
+       
+    }
+    else 
+    {
+        if(num > Maximum)
+        {
+        Maximum = num-1;
+        }
+    
+    }
+    cout << Maximum << endl;
+   break;
+}
+}   
+   
+
+
