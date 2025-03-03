@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int a;
+   cin >> a;
+   char a1 = a;
+
+   cout << a <<"\n"  << a1 << endl;
+}
