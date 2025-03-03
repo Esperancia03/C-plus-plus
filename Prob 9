@@ -1,0 +1,17 @@
+/*Please write a program allow user input two floating point number and print out the result of addition, subtraction, multiplication and division of two number.
+*/
+#include<iostream>
+#include <cmath>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    float a, b;
+    cin >> a >> b;
+
+    cout << fixed << setprecision(6)<< a << " " << "+" << " " << b<< fixed << setprecision(6) << " " << "=" << " " << fixed << setprecision(2) << a+b << endl;
+    cout<< fixed << setprecision(6) << a << " " << "-" << " " << b<< fixed << setprecision(6) << " " <<"=" << " " << fixed << setprecision(2) << a-b << endl;
+    cout<< fixed << setprecision(6) << a << " " << "*" << " " << b<< fixed << setprecision(6) << " " <<"=" << " " << fixed << setprecision(2)<< a*b << endl;
+    cout << fixed << setprecision(6)<< a << " " << "/" << " " << b << fixed << setprecision(6)<< " " <<"=" << " " << fixed << setprecision(2)  << a/b << endl;
+}
