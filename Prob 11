@@ -1,0 +1,20 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    int a,b;
+
+    cin >> a >> b;
+// n is about all the number between a and b that respecte the
+for(int i = a; i <b; i++)
+{
+    if(i % 3 == 2 && i % 7 == 5 && i % 11 ==7)
+    {
+        cout << i << " ";
+
+    }
+}
+}
