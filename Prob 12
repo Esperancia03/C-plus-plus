@@ -34,10 +34,7 @@ class Primefactorization{
         }
         cout << endl;
         
-        while (n > 1)
-         if(!first)
-         cout << " * ";
-         cout << n << endl;
+        
     }
     
     
