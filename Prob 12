@@ -1,0 +1,64 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+class Primefactorization{
+    public:
+    
+    void FindPrime(int n )
+    {
+        
+        cout << n << " = ";
+        bool first = true;
+        
+            while(n %2 == 0)
+            {
+            if(!first)
+            cout << " * ";
+            cout << 2;
+            n /=2;
+            first = false;
+            }
+            
+        for(int i =3; sqrt(i)<n; i+2)
+        {    
+            while(n %i == 0)
+            {
+              if(!first)
+                cout << " * ";
+                  cout << i;
+                   n /=i;
+                   first = false;
+            }
+        }
+        cout << endl;
+        
+        while (n > 1)
+         if(!first)
+         cout << " * ";
+         cout << n << endl;
+    }
+    
+    
+};
+
+
+int main()
+{
+    int n = 1000;
+    Primefactorization P;
+   
+   for (int i=0; i< n; i++ ) 
+   {
+       cin >> i;
+       if(i !=0)
+       {
+           P.FindPrime(i);
+       }
+       else 
+       break;
+   }
+    
+    
+}
