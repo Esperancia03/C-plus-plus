@@ -1,0 +1,48 @@
+#include<iostream>
+#include<iomanip>
+#include<vector>
+#include<cmath>
+
+using namespace std;
+
+int sum(int arr[], int n)
+{
+
+int sum =0;
+for(int i=0; i<n; i++)
+{
+    sum += arr[i];
+}
+return sum;
+}
+
+double av(int arr[], int n)
+{
+    if(n==0)
+     return 0;
+    else
+    return static_cast<double>((sum(arr, n))/n);
+
+   
+    
+}
+    
+int main()
+{
+    int n;
+    cin >> n;
+    vector<int>arr(n);
+    for(int i=0; i<n; i++ )
+    {
+        cin >> arr[i];
+
+    }
+    cout << sum(arr.data(), n) << " ";
+    cout << fixed << setprecision(2) << av(arr.data(),n) << endl;
+
+    return 0;
+
+
+
+
+}
